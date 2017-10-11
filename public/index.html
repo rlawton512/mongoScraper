@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Mongo Scraper</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      background-color: #2f4f4f;
+    }
+
+    .nav {
+      font-size: 25px;
+
+    }
+
+    .jumbotron {
+      color: #ff69b4;
+      background: #000 url("background_6.jpeg") center center;
+      background-size: cover;
+      /* overflow: hidden; */
+       /* position:absolute; */
+		  /* top:0;left:0;
+		  z-index:1;  */
+    }
+
+     #display {
+      margin: 10px;
+      font-size: 15px;
+      /* height: 20px; */
+    } 
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+     <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Mongo Scraper</a>
+    </div> 
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Saved Articles</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><button>Click to Scrape</button></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron jumbotron-billboard">
+    <div class="container text-center">
+      <h1>MONGO SCRAPER</h1>      
+      <p>HUFFINGTON POST EDITION</p>
+      <br>
+      <img src = "logo.jpeg" width = "60px" height = "60px">
+    </div>
+</div>
+
+
+<div class="panel panel-danger" id ="display"></div>
+<div id="notes"></div>  
+   <!-- <div class="panel-heading"></div>
+  <div class="panel-body"></div> 
+</div> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
