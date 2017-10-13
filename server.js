@@ -33,7 +33,7 @@ app.use(express.static("public"));
 var port = process.env.PORT || 3000;
 
 // Database configuration with mongoose
-var databaseUri = "mongodb://localhost/huffpostscrape";
+var databaseUri = "mongodb://localhost/huffpost_2_scrape";
 
 if(process.env.MONGODB_URI) {
   mongoose.connect(process.env.MONGODB_URI);
